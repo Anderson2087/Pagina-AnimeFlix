@@ -1,0 +1,118 @@
+/* :root é uma forma de cetar variaveis no cod css3*/
+:root{
+    --vermelho: #E50914;
+    --preta: #141414;
+}
+
+/*Auxilia a padronização das margens do layout*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Elementos Base*/
+body{
+    background: var(--preta);
+    font-family: 'Arial', Times, serif;
+    color: #fff;
+}
+
+header .container{
+    /*O "display" junto com o "flex" estão formatando as informações contidas no container de forma horizontal/vertical*/
+    display: flex;
+    flex-direction: row;
+    /*O comando "aling-itens" esta centralizando as informações no container*/
+    align-items: center;
+    /*O comando justify-content esta colocando um espaso entre "h2" e o "nav"*/
+    justify-content: space-between;
+}
+
+header .logo{
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin: 10px;
+}
+
+header nav a:hover{
+    color: #fff;
+}
+
+.capa{
+    /*O "display" junto com o "flex" estão formatando as informações contidas no container de forma horizontal/vertical*/
+    display: flex;
+    flex-direction: row;
+    /*O comando "aling-itens" colocando as informações no topo*/
+    height: 250px;
+    background-size: cover;
+    align-items: flex-start;
+}
+
+.capa .container-info{
+    /*O "display" junto com o "flex" estão formatando as informações contidas no container de forma horizontal/vertical*/
+    display: flex;
+    flex-direction: column;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container-info{
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+.sinops{
+    border-top: 1px solid rgb(165, 162, 162);
+    margin-top: 15px;
+    margin-left: 5px;
+}
+
+.texto{
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+.filme-imagem{
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.botao{
+    background-color: rgba(40, 4, 202, 0.5);
+    border: none;
+    color: white;
+
+    margin-top: 40px;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .5s ease all;
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.botao a{
+    text-decoration: none;
+    color: white;
+}
+
+.botao:hover a{
+    color: black;
+}
